@@ -19,7 +19,7 @@
     "lucide-react": "^1.21.0",
     "mongodb": "^7.3.0",
     "mongoose": "^9.7.2",
-    "next": "16.0.5",
+    "next": "16.0.10",
     "radix-ui": "^1.6.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
