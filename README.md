@@ -47,7 +47,7 @@ A modern full-stack job application tracking platform that helps users organize 
 
 ### Landing Page
 
-![Landing Page](Screenshot 2026-07-17 195812.png)
+![Landing Page](Screenshot2026-07-17195812.png)
 
 ### Dashboard
 
