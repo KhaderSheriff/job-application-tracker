@@ -1,36 +1,229 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💼 Job Application Tracker
 
-## Getting Started
+A modern full-stack job application tracking platform that helps users organize and manage their job search with an intuitive Kanban board interface.
 
-First, run the development server:
+🌐 **Live Demo:** https://job-application-tracker-xi-nine.vercel.app/
+
+---
+
+## 📌 Features
+
+- 🔐 Secure Authentication using Better Auth
+- 📋 Personal Kanban board for every user
+- ➕ Create, update, and delete job applications
+- 🔄 Drag & drop applications between stages
+- 📊 Track application progress visually
+- 🎯 Automatically creates a default board after signup
+- 📱 Responsive design for desktop and mobile
+- ⚡ Fast server-side rendering with Next.js App Router
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Radix UI
+- Lucide React
+
+### Backend
+- Next.js Server Actions
+- Better Auth
+- MongoDB
+- Mongoose
+
+### Other Libraries
+- dnd-kit (Drag & Drop)
+- Tailwind Merge
+- Class Variance Authority
+
+---
+
+## 📷 Screenshots
+
+> Add screenshots here after uploading them.
+
+### Landing Page
+
+![Landing Page](public/screenshots/landing.png)
+
+### Dashboard
+
+![Dashboard](public/screenshots/dashboard.png)
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/KhaderSheriff/job-application-tracker.git
+cd job-application-tracker
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Create Environment Variables
+
+Create a `.env.local` file in the root directory.
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+
+BETTER_AUTH_SECRET=your_secret
+
+BETTER_AUTH_URL=http://localhost:3000
+
+NEXT_PUBLIC_BETTER_AUTH_URL=http://localhost:3000
+```
+
+### Start Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/
+│
+├── api/
+├── dashboard/
+├── sign-in/
+├── sign-up/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+components/
+│
+├── ui/
+├── kanban-board.tsx
+├── job-card.tsx
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+lib/
+│
+├── actions/
+├── auth/
+├── hooks/
+├── models/
+├── db.ts
+├── init-user-board.ts
 
-## Deploy on Vercel
+scripts/
+│
+└── seed.ts
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎯 Application Workflow
+
+1. User signs up
+2. Better Auth creates a secure account
+3. A personal **Job Hunt** board is automatically generated
+4. Default columns are created:
+
+- Wishlist
+- Applied
+- Interview
+- Offer
+- Rejected
+
+5. Users can
+
+- Add new job applications
+- Edit job details
+- Delete jobs
+- Drag jobs between columns
+- Track their progress visually
+
+---
+
+## ✨ Key Features Implemented
+
+- Email & Password Authentication
+- Automatic board creation
+- Server Actions
+- MongoDB Relationships
+- Drag-and-Drop Kanban Board
+- Protected Dashboard
+- Responsive UI
+- Loading & Error States
+
+---
+
+## 🔮 Future Improvements
+
+- Search and filter jobs
+- Resume upload
+- Company notes
+- Application reminders
+- Calendar integration
+- Email notifications
+- Analytics dashboard
+- Multiple boards
+- Dark mode
+
+---
+
+## 📦 Available Scripts
+
+```bash
+npm run dev
+```
+
+Start development server.
+
+```bash
+npm run build
+```
+
+Build production application.
+
+```bash
+npm run start
+```
+
+Start production server.
+
+```bash
+npm run lint
+```
+
+Run ESLint.
+
+```bash
+npm run seed:jobs
+```
+
+Seed sample job applications.
+
+---
+
+## 👨‍💻 Author
+
+**Khader Sheriff I**
+
+- GitHub: https://github.com/KhaderSheriff
+- LinkedIn: https://www.linkedin.com/in/khadersheriff
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
