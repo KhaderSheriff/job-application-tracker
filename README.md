@@ -44,15 +44,14 @@ A modern full-stack job application tracking platform that helps users organize 
 
 ## 📷 Screenshots
 
-> Add screenshots here after uploading them.
 
 ### Landing Page
 
-![Landing Page](public/screenshots/landing.png)
+![Landing Page](public/screenshots/landing.pn)
 
 ### Dashboard
 
-![Dashboard](public/screenshots/dashboard.png)
+![Dashboard](public/hero-images/hero01.png)
 
 ---
 
