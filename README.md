@@ -44,11 +44,6 @@ A modern full-stack job application tracking platform that helps users organize 
 
 ## 📷 Screenshots
 
-
-### Landing Page
-
-![Landing Page](Screenshot2026-07-17195812.png)
-
 ### Dashboard
 
 ![Dashboard](public/hero-images/hero01.png)
